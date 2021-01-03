@@ -15,6 +15,7 @@
 
 ![示例页面](http://wx2.sinaimg.cn/mw690/69e23056gy1fho6ymepjlg20go0aknar.gif) 
 
+# 修复laravel 在高于5.8 以上版本的秒传功能
 # 功能特性
 - [x] 百分比进度条  
 - [x] 文件类型限制  
