@@ -43,9 +43,9 @@ class RedisClient
     {
         $result = Redis::hexists('aetherupload_header', $field);
 
-        if ( $result === 1 ) {
+        if ( $result === true ) {
             return true;
-        } elseif ( $result === 0 ) {
+        } elseif ( $result === false ) {
             return false;
         } else {
             throw new \Exception('exists error');
