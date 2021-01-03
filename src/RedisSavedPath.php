@@ -11,9 +11,9 @@ class RedisSavedPath
     {
         $result = Redis::hexists('aetherupload_resource', $key);
 
-        if ( $result === 1 ) {
+        if ( $result === true ) {
             return true;
-        } elseif ( $result === 0 ) {
+        } elseif ( $result === false ) {
             return false;
         } else {
             throw new \Exception('exists error');
